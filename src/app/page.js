@@ -1,13 +1,15 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import BorderCollieAvatar from "./Components/KarlaAvatar";
+import KarlaWithYellowBall from "../images/KarlaWithYellowBall.png"
 
 export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.description}>
         <p>
-          Get started by editing 1&nbsp;
-          <code className={styles.code}>src/app/page.js</code>
+          Hi Karla!&nbsp;
+          {/* <code className={styles.code}>src/app/page.js</code> */}
         </p>
         <div>
           <a
@@ -15,15 +17,11 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
+            <div>
+              <BorderCollieAvatar />
+            </div>
             By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
+       
           </a>
         </div>
       </div>
